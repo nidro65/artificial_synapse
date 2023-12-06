@@ -15,7 +15,7 @@
 * p:    Parameter for window function
 * x0:   State varaible initial value
 
-.params Ron=5K Roff=50K x0=0.6 D=3.5N uv=10F p=3
+.params Ron=5K Roff=50K x0=0.5 D=3.5N uv=10F p=3
 
 * Biolek Window Function
 .func f(V1,I1)={1-pow((V1-stp(-I1)),(2*p))}
