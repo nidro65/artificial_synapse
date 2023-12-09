@@ -18,7 +18,15 @@
 .params Ron=5K Roff=50K x0=0.5 D=3.5N uv=10F p=3
 
 * Biolek Window Function
-.func f(V1,I1)={1-pow((V1-stp(-I1)),(2*p))}
+
+*biolek
+*.func f(V1,I1)={1-pow((V1-stp(-I1)),(2*p))}
+
+*paper
+.func f(V1,I1)={(V(TE,BE)>0)*(exp(p*V(XSV,0))/(1-exp(p))) + (V(TE,BE)<0)*(exp(p*(1-V(XSV,0))))/(1-exp(p))}
+
+*joglekar
+*.func f(V1,IV) = 1-pow((2*V1-1),(2*p))
 
 * Memristor I-V Relationship
 .func IVRel(V1,V2) = V1/(Ron*V2 + Roff*(1-V2))
