@@ -24,7 +24,7 @@
 .func IVRel(V1,V2) = V1/(Ron*V2 + Roff*(1-V2))
 
 * Circuit to determine state variable
-Gx 0 XSV value={I(Gmem)*Ron*uv*f(V(XSV,0),I(Gmem))/pow(D,2)}
+Gx 0 XSV value={I(Gmem)*Ron*uv*f(V(XSV,0),I(Gmem))/pow(D,2)*stp(abs(V(BE,TE))-2)}
 Cx XSV 0 {1}
 .ic V(XSV) = x0
 
