@@ -10,3 +10,6 @@
 
 # Netlist
 *.net
+
+# Custom
+data_analysis/images/*

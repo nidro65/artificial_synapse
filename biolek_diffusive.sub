@@ -16,7 +16,7 @@
 * x0:   State varaible initial value
 * tau:  Time constant variable
 
-.params Ron=1K Roff=500k x0=0.5 D=3.5N uv=5p p=3 tau=10m
+.params Ron=1k Roff=500k x0=0 D=3.5n uv=5p p=3 tau=5m
 
 * Biolek Window Function
 .func f(V1,I1)={1-pow((V1-stp(-I1)),(2*p))}

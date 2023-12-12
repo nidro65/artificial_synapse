@@ -15,15 +15,15 @@
 * p:    Parameter for window function
 * x0:   State varaible initial value
 
-.params Ron=5K Roff=50K x0=0.5 D=3.5N uv=10F p=3
+.params Ron=1k Roff=10k x0=0.5 D=3.5n uv=10f p=3
 
 * Biolek Window Function
 
 *biolek
-*.func f(V1,I1)={1-pow((V1-stp(-I1)),(2*p))}
+.func f(V1,I1)={1-pow((V1-stp(-I1)),(2*p))}
 
 *paper
-.func f(V1,I1)={(V(TE,BE)>0)*(exp(p*V(XSV,0))/(1-exp(p))) + (V(TE,BE)<0)*(exp(p*(1-V(XSV,0))))/(1-exp(p))}
+*.func f(V1,I1)={(V(TE,BE)>0)*(exp(p*V(XSV,0))/(1-exp(p))) + (V(TE,BE)<0)*(exp(p*(1-V(XSV,0))))/(1-exp(p))}
 
 *joglekar
 *.func f(V1,IV) = 1-pow((2*V1-1),(2*p))
