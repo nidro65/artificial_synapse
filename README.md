@@ -5,7 +5,16 @@ This project was done as part of the assessment of the course Neuromorphic Engin
 The objective was to model a synapse with a so called memristor.
 A memristor is variable resistor whose resistance can be changed by a high voltage programming pulse.
 
-We were able to show Spike-Timing Dependent Plasticity (STDP), see following [picture](https://github.com/nidro65/artificial_synapse/blob/master/data_analysis/images/stdp_data_not_overlapping.png), and Paired-Pulse Facilitation (PPF).
+We were able to show Spike-Timing Dependent Plasticity (STDP) and Paired-Pulse Facilitation (PPF), see following pictures.
+
+**Spike Timing Dependent Plasticity**
+![STDP](/imgs/stdp_data_not_overlapping.png)
+Caption: The graph shows the change in the synapse weight $\Delta w$ depending on the timing difference of the postsynaptic spike versus the presynaptic spike $\Delta T = t_{post} - t_{pre}$. 
+
+
+**Paired Pulse Facilitation**
+![PPF](/imgs/ppf.png)
+Caption: Two closely spaced activations yield a smaller synaptic weight increase for the first pulse ($\Delta V_{wdiff} = 185mV$) and an enhanced weight increase for the second pulse ($\Delta V_{wdiff} = 225mV$).
 
 ## Get started
 
