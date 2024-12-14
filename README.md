@@ -9,7 +9,7 @@ We were able to show Spike-Timing Dependent Plasticity (STDP) and Paired-Pulse F
 
 **Spike Timing Dependent Plasticity**
 ![STDP](/imgs/stdp_data_not_overlapping.png)
-Caption: The graph shows the change in the synapse weight $\Delta w$ depending on the timing difference of the postsynaptic spike versus the presynaptic spike $\Delta T = t_{post} - t_{pre}$. 
+Caption: The graph shows the change in the synapse weight $\Delta w$ depending on the timing difference of the postsynaptic spike versus the presynaptic spike $\Delta T = t_{pre} - t_{post}$. 
 
 
 **Paired Pulse Facilitation**
