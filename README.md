@@ -1,5 +1,12 @@
 # Artificial Synapse
 
+This project was done as part of the assessment of the course Neuromorphic Engineering.
+
+The objective was to model a synapse with a so called memristor.
+A memristor is variable resistor whose resistance can be changed by a high voltage programming pulse.
+
+We were able to show Spike-Timing Dependent Plasticity (STDP), see following [picture](https://github.com/nidro65/artificial_synapse/blob/master/data_analysis/images/stdp_data_not_overlapping.png), and Paired-Pulse Facilitation (PPF).
+
 ## Get started
 
  - Open LTSpice
