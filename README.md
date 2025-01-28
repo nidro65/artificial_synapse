@@ -1,9 +1,10 @@
 # Artificial Synapse
 
-This group project was done as part of the assessment of the course Neuromorphic Engineering.
+This group project was done as part of the assessment of the course Neuromorphic Engineering held by Prof. Qiangfei Xia.
 
 The objective was to model a synapse with a so called memristor.
 A memristor is variable resistor whose resistance can be changed by a high voltage programming pulse.
+The implementation followed the scheme proposed in [1].
 
 We were able to show Spike-Timing Dependent Plasticity (STDP) and Paired-Pulse Facilitation (PPF), see following pictures.
 
@@ -15,6 +16,10 @@ Caption: The graph shows the change in the synapse weight $\Delta w$ depending o
 **Paired Pulse Facilitation**
 ![PPF](/imgs/ppf.png)
 Caption: Two closely spaced activations yield a smaller synaptic weight increase for the first pulse ($\Delta V_{wdiff} = 185mV$) and an enhanced weight increase for the second pulse ($\Delta V_{wdiff} = 225mV$).
+
+# References
+
+[1] Wang, Z., Joshi, S., Savel’ev, S. et al. Memristors with diffusive dynamics as synaptic emulators for neuromorphic computing. Nature Mater 16, 101–108 (2017). https://doi.org/10.1038/nmat4756
 
 ## Get started
 
